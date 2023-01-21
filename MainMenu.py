@@ -2,18 +2,14 @@ import pygame
 import pygame_menu
 
 pygame.init()
-surface = pygame.display.set_mode((1000, 800))
+surface = pygame.display.set_mode((800, 600))
+menu = pygame_menu.Menu('=+=+=+=+=+=+=+=Pong=+=+=+=+=+=+=+=', 800, 600,
+                        theme=pygame_menu.themes.THEME_ORANGE)
 
-def start_the_game():
-    # NOAH'S CODE
-    pass
+from Game import main
 
-menu = pygame_menu.Menu('=+=+=+=+=+=+=+=Pong=+=+=+=+=+=+=+=', 1000, 800,
-                       theme=pygame_menu.themes.THEME_DARK)
-
-menu.add.button('Play', exec('Game.py').read()))
+menu.add.button('Play', main)
 menu.add.button('Player One: "W" "S"')
-menu.add.button('Player Two: "Up" "Down')
+menu.add.button('Player Two: "Up" "Down"')
 menu.add.button('Quit', pygame_menu.events.EXIT)
 menu.mainloop(surface)
-execfile()

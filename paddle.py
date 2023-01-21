@@ -2,7 +2,6 @@ import pygame
 
 BLACK = (0, 0, 0)
 
-
 class Paddle(pygame.sprite.Sprite):
    # The class represents a paddle which comes from the sprite class in pygame
 

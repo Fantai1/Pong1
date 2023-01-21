@@ -3,7 +3,6 @@ from random import randint
 
 BLACK = (0, 0, 0)
 
-
 class Ball(pygame.sprite.Sprite):
    # This class represents a ball and uses the sprite class from pygame
 
